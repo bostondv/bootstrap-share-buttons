@@ -12,7 +12,7 @@ If you have questions or put this to use then hit me up on Twitter (@mattberridg
 
 ## Using the WordPress plugin
 
-Download `simple-social-sharing.php` and upload into your plugins folder and activate it. To call the buttons anywhere in your theme, use the function `<?php simple_social_sharing('mattberridge'); ?>` including your Twitter username.
+Download `simple-social-sharing.php`, upload it into your plugins folder and activate it. To call the buttons anywhere in your theme, use the function `<?php simple_social_sharing('mattberridge'); ?>` including your Twitter username.
 
 If you wish to show/hide any of the buttons individually, add a further attribute e.g. `<?php simple_social_sharing('mattberridge', '1,0,1'); ?>`
 
