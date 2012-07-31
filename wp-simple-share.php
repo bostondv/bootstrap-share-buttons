@@ -8,7 +8,7 @@
 	// related account (if applicable, if not delete '&amp;related=' from twitter href)
 	$twitter_related = 'mixd';
 	// get post content and urlencode it
-	$browser_title_encoded = urlencode(wp_title('', false));
+	$browser_title_encoded = urlencode(wp_title('', false, 'right'));
 	$page_title_encoded = urlencode(get_the_title());
 	$page_url_encoded = urlencode(get_permalink($post->ID));
 ?>
