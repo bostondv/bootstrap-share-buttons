@@ -18,9 +18,10 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	$page_title_encoded = urlencode(get_the_title());
 	$page_url_encoded = urlencode(get_permalink($post->ID));
 	
-	// create share items
+	// create share items array
 	$share_items = array ();
 	
+	// set each item
 	$item_twitter = array(
 		"class" => "twitter",
 		"href" => "http://twitter.com/share?text={$page_title_encoded}&amp;url={$page_url_encoded}&amp;via={$twitter_account}",
@@ -39,21 +40,18 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	
 	// test whether to display each item
 	if($item_toggles) {
-	
 		// explode into array
 		$item_toggles_array = explode(",", $item_toggles);
-		
 		// set each item on or off
 		$show_twitter = $item_toggles_array['0'];
 		$show_facebook = $item_toggles_array['1'];
 		$show_google = $item_toggles_array['2'];
-		
 	}
 	else {
 		$display_all_items = 1;
 	}
 	
-	// form array of relevant items
+	// form array of items set to 1
 	if($show_twitter==1 || $display_all_items) {
 		array_push($share_items, $item_twitter);
 	}
@@ -66,7 +64,6 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	
 	// if one or more items
 	if(!empty($share_items)) {
-	
 		// create output
 		$share_output = "<ul class=\"ss-share\">\n";
 		foreach($share_items as $share_item) {
@@ -75,7 +72,6 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 			$share_output .= "</li>\n";	
 		}
 		$share_output .= "</ul>";
-		
 		// echo output
 		echo $share_output;
 	}
@@ -84,13 +80,11 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 
 // add shortcode to output buttons
 function simple_social_sharing_shortcode( $atts, $content = null ) {
-
 	// parse variables / set defaults
 	extract( shortcode_atts( array(
 		'twitter' => '',
 		'display' => '1,1,1',
 	), $atts ) );
-	
 	// output buttons
 	$output_string = simple_social_sharing($twitter, $display);
 	return force_balance_tags($output_string);
