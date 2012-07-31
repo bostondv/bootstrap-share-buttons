@@ -39,12 +39,15 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	
 	// test whether to display each item
 	if($item_toggles) {
+	
 		// explode into array
 		$item_toggles_array = explode(",", $item_toggles);
+		
 		// set each item on or off
 		$show_twitter = $item_toggles_array['0'];
 		$show_facebook = $item_toggles_array['1'];
 		$show_google = $item_toggles_array['2'];
+		
 	}
 	else {
 		$display_all_items = 1;
@@ -63,6 +66,7 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	
 	// if one or more items
 	if(!empty($share_items)) {
+	
 		// create output
 		$share_output = "<ul class=\"ss-share\">\n";
 		foreach($share_items as $share_item) {
@@ -71,6 +75,7 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 			$share_output .= "</li>\n";	
 		}
 		$share_output .= "</ul>";
+		
 		// echo output
 		echo $share_output;
 	}
