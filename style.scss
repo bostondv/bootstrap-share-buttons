@@ -27,15 +27,15 @@ body {
 
 /* -- Begin social sharing buttons
 ------------------------------------------------------------- */
-.share {
+.ss-share {
 	padding-left: 0;
 	list-style: none; }
 	
-.share-item {
+.ss-share-item {
 	display: inline;
 	margin-right: 1em; }	
 
-.share-link {
+.ss-share-link {
 	/* crude button styles */
 	text-decoration: none;
 	color: #444;
@@ -52,7 +52,7 @@ body {
 	}
 }
 
-[class*="ico"] {
+[class*="ico-"] {
 	display: inline-block;
 	background-size: 16px 16px;
 	background-repeat: no-repeat;
