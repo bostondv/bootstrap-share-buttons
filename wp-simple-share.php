@@ -14,7 +14,7 @@
 ?>
 <ul class="share">
 	<li class="share-item">
-		<a class="share-link ico-facebook" href="http://www.facebook.com/sharer.php?u=<?= $page_url_encoded ?>&amp;t=<?= $browser_title_enconded ?>" rel="nofollow">Share on Facebook</a>
+		<a class="share-link ico-facebook" href="http://www.facebook.com/sharer.php?u=<?= $page_url_encoded ?>&amp;t=<?= $browser_title_encoded ?>" rel="nofollow">Share on Facebook</a>
 	</li>
 	<li class="share-item">
 		<a class="share-link ico-twitter" href="http://twitter.com/share?text=<?= $page_title_encoded; ?>&amp;url=<?= $page_url_encoded ?>&amp;via=<?= $twitter_account ?>&amp;related=<?= $twitter_related ?>" rel="nofollow">Share on Twitter</a>
