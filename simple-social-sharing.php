@@ -22,15 +22,15 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	$share_items = array ();
 	
 	// set each item
-	$item_twitter = array(
-		"class" => "twitter",
-		"href" => "http://twitter.com/share?text={$page_title_encoded}&amp;url={$page_url_encoded}&amp;via={$twitter_account}",
-		"text" => "Share on Twitter"
-	);
 	$item_facebook = array(
 		"class" => "facebook",
 		"href" => "http://www.facebook.com/sharer.php?u={$page_url_encoded}&amp;t={$browser_title_encoded}",
 		"text" => "Share on Facebook"
+	);
+	$item_twitter = array(
+		"class" => "twitter",
+		"href" => "http://twitter.com/share?text={$page_title_encoded}&amp;url={$page_url_encoded}&amp;via={$twitter_account}",
+		"text" => "Share on Twitter"
 	);
 	$item_google = array(
 		"class" => "google",
@@ -43,8 +43,8 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 		// explode into array
 		$item_toggles_array = explode(",", $item_toggles);
 		// set each item on or off
-		$show_twitter = $item_toggles_array['0'];
-		$show_facebook = $item_toggles_array['1'];
+		$show_facebook = $item_toggles_array['0'];
+		$show_twitter = $item_toggles_array['1'];
 		$show_google = $item_toggles_array['2'];
 	}
 	else {
@@ -52,11 +52,11 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	}
 	
 	// form array of items set to 1
-	if($show_twitter==1 || $display_all_items) {
-		array_push($share_items, $item_twitter);
-	}
 	if($show_facebook==1 || $display_all_items) {
 		array_push($share_items, $item_facebook);
+	}
+	if($show_twitter==1 || $display_all_items) {
+		array_push($share_items, $item_twitter);
 	}
 	if($show_google==1 || $display_all_items) {
 		array_push($share_items, $item_google);
