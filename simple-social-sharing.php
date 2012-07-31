@@ -86,7 +86,10 @@ function simple_social_sharing_shortcode( $atts, $content = null ) {
 		'display' => '1,1,1',
 	), $atts ) );
 	// output buttons
-	$output_string = simple_social_sharing($twitter, $display);
+	ob_start();
+	simple_social_sharing($twitter, $display);
+	$output_string = ob_get_contents();
+	ob_end_clean();
 	return force_balance_tags($output_string);
 }
 add_shortcode('simple-social-sharing', 'simple_social_sharing_shortcode');
