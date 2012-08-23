@@ -1,6 +1,6 @@
 <?php
 /*
-	Plugin Name: Simple Social Sharing
+	Plugin Name: Boon's Simple Social Sharing
 	Plugin URI: https://github.com/mattberridge/Simple-Social-Sharing-Buttons
 	Description: Super lightweight social sharing buttons (without counters)
 	Author: built by Boon
