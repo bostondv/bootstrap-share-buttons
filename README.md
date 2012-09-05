@@ -6,7 +6,7 @@ An often overlooked method of implementing social sharing buttons (without count
 
 [built by Boon](here: http://builtbyboon.com/) - given away free
 
-If you have questions or put this to use then [hit me up on Twitter])http://twitter.com/mattberridge)
+If you have questions or put this to use then [hit me up on Twitter](http://twitter.com/mattberridge)
 
 ## Using the WordPress plugin
 
