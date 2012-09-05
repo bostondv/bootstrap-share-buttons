@@ -2,13 +2,11 @@
 
 An often overlooked method of implementing social sharing buttons (without counters) on your site. Super lightweight without any external loading or JavaScript, fully customisable using CSS alone. WordPress plugin also included.
 
-**Check out the demo here: http://builtbyboon.com/posed/Simple-Social-Sharing-Buttons/**
+**[Check out the demo](http://builtbyboon.com/posed/Simple-Social-Sharing-Buttons/)** or **[Read all about it](http://builtbyboon.com/blog/simple-social-sharing-buttons/)**
 
-**Read all about it: http://builtbyboon.com/blog/simple-social-sharing-buttons**
+[built by Boon](here: http://builtbyboon.com/) - given away free
 
-built by Boon - given away free
-
-If you have questions or put this to use then hit me up on Twitter (@mattberridge).
+If you have questions or put this to use then [hit me up on Twitter])http://twitter.com/mattberridge)
 
 ## Using the WordPress plugin
 
