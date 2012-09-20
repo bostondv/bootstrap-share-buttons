@@ -6,21 +6,21 @@
 	Author: built by Boon
 	Author URI: http://builtbyboon.com
 */
-function simple_social_sharing($attr_twitter = null, $attr_items = null) {
+function simple_social_sharing( $attr_twitter = null, $attr_items = null ) {
 
 	// parse variables
 	$twitter_account = $attr_twitter;
 	$item_toggles = $attr_items;
-	
+
 	// get post content and urlencode it
 	global $post;
-	$browser_title_encoded = urlencode(trim(wp_title('', false, 'right')));
-	$page_title_encoded = urlencode(get_the_title());
-	$page_url_encoded = urlencode(get_permalink($post->ID));
-	
+	$browser_title_encoded = urlencode( trim( wp_title( '', false, 'right' ) ) );
+	$page_title_encoded = urlencode( get_the_title() );
+	$page_url_encoded = urlencode( get_permalink($post->ID) );
+
 	// create share items array
 	$share_items = array ();
-	
+
 	// set each item
 	$item_facebook = array(
 		"class" => "facebook",
@@ -37,11 +37,11 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 		"href" => "http://plus.google.com/share?url={$page_url_encoded}",
 		"text" => "Share on Google+"
 	);
-	
+
 	// test whether to display each item
 	if($item_toggles) {
 		// explode into array
-		$item_toggles_array = explode(",", $item_toggles);
+		$item_toggles_array = explode( ",", $item_toggles );
 		// set each item on or off
 		$show_facebook = $item_toggles_array['0'];
 		$show_twitter = $item_toggles_array['1'];
@@ -50,23 +50,23 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 	else {
 		$display_all_items = 1;
 	}
-	
+
 	// form array of items set to 1
-	if($show_facebook==1 || $display_all_items) {
-		array_push($share_items, $item_facebook);
+	if( $show_facebook==1 || $display_all_items ) {
+		array_push( $share_items, $item_facebook );
 	}
-	if($show_twitter==1 || $display_all_items) {
-		array_push($share_items, $item_twitter);
+	if( $show_twitter==1 || $display_all_items) {
+		array_push( $share_items, $item_twitter );
 	}
-	if($show_google==1 || $display_all_items) {
-		array_push($share_items, $item_google);
+	if( $show_google==1 || $display_all_items) {
+		array_push( $share_items, $item_google );
 	}
-	
+
 	// if one or more items
-	if(!empty($share_items)) {
+	if ( ! empty( $share_items ) ) {
 		// create output
 		$share_output = "<ul class=\"ss-share\">\n";
-		foreach($share_items as $share_item) {
+		foreach ( $share_items as $share_item ) {
 			$share_output .= "<li class=\"ss-share-item\">\n";	
 			$share_output .= "<a class=\"ss-share-link ico-{$share_item['class']}\" href=\"{$share_item["href"]}\" rel=\"nofollow\" target=\"_blank\">{$share_item['text']}</a>\n";	
 			$share_output .= "</li>\n";	
@@ -75,7 +75,7 @@ function simple_social_sharing($attr_twitter = null, $attr_items = null) {
 		// echo output
 		echo $share_output;
 	}
-	
+
 }
 
 // add shortcode to output buttons
@@ -87,11 +87,12 @@ function simple_social_sharing_shortcode( $atts, $content = null ) {
 	), $atts ) );
 	// output buttons
 	ob_start();
-	simple_social_sharing($twitter, $display);
+	simple_social_sharing( $twitter, $display );
 	$output_string = ob_get_contents();
 	ob_end_clean();
-	return force_balance_tags($output_string);
+	return force_balance_tags( $output_string );
 }
-add_shortcode('simple-social-sharing', 'simple_social_sharing_shortcode');
+
+add_shortcode( 'simple-social-sharing', 'simple_social_sharing_shortcode' );
 
 ?>
