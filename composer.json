@@ -1,0 +1,24 @@
+{
+  "name": "bostondv/bootstrap-share-buttons-wordpress",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "Super lightweight Bootstrap social sharing buttons (without counters)",
+  "homepage": "http://github.com/bostondv/bootstrap-share-buttons-wordpress/",
+  "authors": [
+    {
+      "name": "Boston Dell-Vandenberg",
+      "email": "boston@pomelodesign.com",
+      "homepage": "http://pomelodesign.com/"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "http://github.com/bostondv/bootstrap-share-buttons-wordpress/issues"
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "~1.0"
+  }
+}
