@@ -1,2 +1,2 @@
-### 1.0.0: August 6, 2014
+### 1.0.0: August 7, 2014
 * Initial commit
