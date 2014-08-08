@@ -44,31 +44,31 @@ if (!function_exists('bootstrap_share_buttons')) {
       'facebook' => array(
         'name' => 'facebook',
         'href' => 'http://www.facebook.com/sharer/sharer.php?u=' . $page_url_encoded . '&amp;t=' . $browser_title_encoded,
-        'text' => __('Share on Facebook', 'bs-share-buttons'),
+        'text' => __('Share', 'bs-share-buttons'),
         'icon' => 'fa-facebook'
       ),
       'twitter' => array(
         'name' => 'twitter',
         'href' => 'http://twitter.com/share?text=' . $page_title_encoded . '&amp;url=' . $page_url_encoded . '&amp;via=' . $twitter_name,
-        'text' => __('Share on Twitter', 'bs-share-buttons'),
+        'text' => __('Tweet', 'bs-share-buttons'),
         'icon' => 'fa-twitter'
       ),
       'google' => array(
         'name' => 'google',
         'href' => 'http://plus.google.com/share?url=' . $page_url_encoded,
-        'text' => __('Share on Google+', 'bs-share-buttons'),
+        'text' => __('Share', 'bs-share-buttons'),
         'icon' => 'fa-google-plus'
       ),
       'pinterest' => array(
         'name' => 'pinterest',
         'href' => 'http://www.pinterest.com/pin/create/button/?url=' .$page_url_encoded . '&amp;description=' . $page_excerpt_encoded . '&amp;media=' . $page_image_url_encoded,
-        'text' => __('Share on Pinterest', 'bs-share-buttons'),
+        'text' => __('Pin It', 'bs-share-buttons'),
         'icon' => 'fa-pinterest'
       ),
       'email' => array(
         'name' => 'email',
         'href' => 'mailto:email@domain.com?subject=' . $page_title_encoded . '&amp;body=' . $page_excerpt_encoded . '%0A%0ALink%3A%20' . $page_url_encoded,
-        'text' => __('Share on Email', 'bs-share-buttons'),
+        'text' => __('Email', 'bs-share-buttons'),
         'icon' => 'fa-envelope'
       ),
       'print' => array(
@@ -80,7 +80,7 @@ if (!function_exists('bootstrap_share_buttons')) {
       'linkedin' => array(
         'name' => 'linkedin',
         'href' => 'http://www.linkedin.com/shareArticle?mini=true&url=' . $page_url_encoded . '&amp;title=' . $browser_title_encoded . '&amp;ro=false&amp;summary=' . $page_excerpt_encoded,
-        'text' => __('Share on LinkedIn', 'bs-share-buttons'),
+        'text' => __('Share', 'bs-share-buttons'),
         'icon' => 'fa-linkedin'
       ),
     );
