@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Bootstrap Share Buttons for WordPress
+Plugin Name: Bootstrap Share Buttons
 Plugin URI: https://github.com/bostondv/bootstrap-share-buttons
 Description: Super lightweight Bootstrap + FontAwesome social sharing buttons (without counters)
 Version: 1.0.1

@@ -99,16 +99,16 @@ Written by Boston Dell-Vandenberg of [Pomelo Design](http://www.pomelodesign.com
 
 = Composer =
 
-`composer require bostondv/bootstrap-share-buttons-wordpress`
+`composer require bostondv/bootstrap-share-buttons`
 
 = WordPress Plugin =
 
-1. Upload the `bootstrap-share-buttons-wordpress` folder to the `/wp-content/plugins/` directory
-1. Activate the Bootstrap Share Buttons for WordPress plugin through the 'Plugins' menu in WordPress
+1. Upload the `bootstrap-share-buttons` folder to the `/wp-content/plugins/` directory
+1. Activate the Bootstrap Share Buttons plugin through the 'Plugins' menu in WordPress
 
 = Manually Include =
 
-[Download the repository](https://github.com/bostondv/bootstrap-share-buttons-wordpress/archive/master.zip) and upload to your project. Include `bootstrap-share-buttons.php` in your project somewhere. 
+[Download the repository](https://github.com/bostondv/bootstrap-share-buttons/archive/master.zip) and upload to your project. Include `bootstrap-share-buttons.php` in your project somewhere. 
 
 == Changelog ==
 

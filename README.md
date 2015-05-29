@@ -10,18 +10,18 @@ If you don't want to use Bootstrap or FontAwesome, you can still use this plugin
 
 ### Composer
 
-`composer require bostondv/bootstrap-share-buttons-wordpress`
+`composer require bostondv/bootstrap-share-buttons`
 
 ### WordPress Plugin
 
 _Coming soon to the WordPress.org plugin repository_. 
 
-1. Upload the `bootstrap-share-buttons-wordpress` folder to the `/wp-content/plugins/` directory
-2. Activate the Bootstrap Share Buttons for WordPress plugin through the 'Plugins' menu in WordPress
+1. Upload the `bootstrap-share-buttons` folder to the `/wp-content/plugins/` directory
+2. Activate the Bootstrap Share Buttons plugin through the 'Plugins' menu in WordPress
 
 ### Manually Include
 
-[Download the repository](https://github.com/bostondv/bootstrap-share-buttons-wordpress/archive/master.zip) and upload to your project. Include `bootstrap-share-buttons.php` in your project somewhere. 
+[Download the repository](https://github.com/bostondv/bootstrap-share-buttons/archive/master.zip) and upload to your project. Include `bootstrap-share-buttons.php` in your project somewhere. 
 
 ## Usage
 
