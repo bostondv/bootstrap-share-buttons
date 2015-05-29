@@ -8,7 +8,7 @@ Requires at least: 3.8
 Tested up to: 4.2
 Stable tag: 1.0.1
 
-Super lightweight Bootstrap social sharing buttons (without counters).
+Super lightweight Bootstrap + FontAwesome social sharing buttons (without counters)
 
 == Description ==
 
