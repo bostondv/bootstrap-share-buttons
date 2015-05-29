@@ -3,12 +3,13 @@
 Plugin Name: Bootstrap Share Buttons for WordPress
 Plugin URI: https://github.com/bostondv/bootstrap-share-buttons-wordpress
 Description: Super lightweight Bootstrap + FontAwesome social sharing buttons (without counters)
-Version: 1.0.0
+Version: 1.0.1
 Author: bostondv
 Author URI: http://pomelodesign.com
 Text Domain: bs-share-buttons
 Domain Path: /languages/
 License: MIT
+License URI: http://opensource.org/licenses/MIT
 */
 
 load_plugin_textdomain('bs-share-buttons', false, basename(dirname( __FILE__ ) ) . '/languages');

@@ -1,4 +1,16 @@
-# Bootstrap Share Buttons for WordPress
+=== Bootstrap Share Buttons for WordPress ===
+Contributors: bostondv
+Donate link: http://pomelodesign.com/donate
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Tags: bootstrap, social, share, buttons, facebook, twitter, pinterest, google, email, print, linkedin
+Requires at least: 3.8
+Tested up to: 4.2
+Stable tag: 1.0.1
+
+Super lightweight Bootstrap social sharing buttons (without counters).
+
+== Description ==
 
 An often overlooked method of implementing social sharing buttons (without counters) on your site. Super lightweight without any external loaded resources, JavaScript, or CSS. Fully customisable using CSS and WordPress filters.
 
@@ -6,38 +18,21 @@ The social buttons are designed to work on sites already running a [Bootstrap](h
 
 If you don't want to use Bootstrap or FontAwesome, you can still use this plugin by providing your own CSS or by using WordPress filters to change the button and icon classes.
 
-## Installation
+= Usage =
 
-### Composer
-
-`composer require bostondv/bootstrap-share-buttons-wordpress`
-
-### WordPress Plugin
-
-_Coming soon to the WordPress.org plugin repository_. 
-
-1. Upload the `bootstrap-share-buttons-wordpress` folder to the `/wp-content/plugins/` directory
-2. Activate the Bootstrap Share Buttons for WordPress plugin through the 'Plugins' menu in WordPress
-
-### Manually Include
-
-[Download the repository](https://github.com/bostondv/bootstrap-share-buttons-wordpress/archive/master.zip) and upload to your project. Include `bootstrap-share-buttons.php` in your project somewhere. 
-
-## Usage
-
-### Shortcode
+= Shortcode =
 
 Display social buttons anywhere shortcodes are supported.
 
 `[bs-share-buttons twitter="bostondv" display="facebook,twitter,google,pinterest" style="both" type="default" size="md" /]`
 
-### Function Call
+= Function Call =
 
 Display social buttons anywhere within your PHP templates.
 
 `<?php echo bootstrap_share_buttons( 'bostondv', 'facebook,twitter,google,pinterest', 'both', 'default', 'md' ); ?>`
 
-### Parameters
+= Parameters =
 
 **twitter** _Required_  
 Your twitter account handle.
@@ -66,7 +61,7 @@ Bootstrap button size.
 Options: `xs`, `sm`, `md`, or `lg`.  
 Default: `md`
 
-### Filters
+= Filters =
 
 **bs\_share\_items**  
 Allows you to change the share buttons displayed and any of their parameters.
@@ -96,6 +91,35 @@ Takes two arguments:
 `$text` _(String)_ - Text for the button.  
 `$name` _(String)_ - Name of the share button eg. 'facebook'.
 
-## About
+= About =
 
 Written by Boston Dell-Vandenberg of [Pomelo Design](http://www.pomelodesign.com). Pomelo Design is a web and mobile app development agency based in Toronto, Canada.
+
+== Installation ==
+
+= Composer =
+
+`composer require bostondv/bootstrap-share-buttons-wordpress`
+
+= WordPress Plugin =
+
+1. Upload the `bootstrap-share-buttons-wordpress` folder to the `/wp-content/plugins/` directory
+1. Activate the Bootstrap Share Buttons for WordPress plugin through the 'Plugins' menu in WordPress
+
+= Manually Include =
+
+[Download the repository](https://github.com/bostondv/bootstrap-share-buttons-wordpress/archive/master.zip) and upload to your project. Include `bootstrap-share-buttons.php` in your project somewhere. 
+
+== Changelog ==
+
+= 1.0.1 =
+
+Release Date: May 29, 2015
+
+* Minor bug fixes and documentation
+
+= 1.0.0 =
+
+Release Date: August 7, 2014
+
+* Initial release
