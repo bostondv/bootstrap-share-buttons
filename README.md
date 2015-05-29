@@ -1,4 +1,4 @@
-# Bootstrap Share Buttons for WordPress
+# Bootstrap Share Buttons
 
 An often overlooked method of implementing social sharing buttons (without counters) on your site. Super lightweight without any external loaded resources, JavaScript, or CSS. Fully customisable using CSS and WordPress filters.
 

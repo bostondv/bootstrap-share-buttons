@@ -1,4 +1,4 @@
-=== Bootstrap Share Buttons for WordPress ===
+=== Bootstrap Share Buttons ===
 Contributors: bostondv
 Donate link: http://pomelodesign.com/donate
 License: MIT
