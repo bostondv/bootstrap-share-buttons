@@ -26,7 +26,7 @@
     "print"
   ],
   "support": {
-    "issues": "http://github.com/bostondv/bootstrap-share-buttons-wordpress/issues/"
+    "issues": "http://github.com/bostondv/bootstrap-share-buttons/issues/"
   },
   "require": {
     "php": ">=5.4.0",
