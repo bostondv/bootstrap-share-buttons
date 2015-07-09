@@ -112,6 +112,12 @@ Written by Boston Dell-Vandenberg of [Pomelo Design](http://www.pomelodesign.com
 
 == Changelog ==
 
+= 1.0.2 =
+
+Release Date: July 9, 2015
+
+* Fix missing closing tag
+
 = 1.0.1 =
 
 Release Date: May 29, 2015
