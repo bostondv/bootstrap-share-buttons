@@ -128,7 +128,7 @@ if (!function_exists('bootstrap_share_buttons')) {
         $output .= '</a>'."\r\n";
         $output .= '</li>'."\r\n";
       }
-      $output .= '</ul></div>'."\r\n";
+      $output .= '</ul>'."\r\n";
     }
 
     return $output;
