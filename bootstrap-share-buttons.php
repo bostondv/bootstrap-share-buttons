@@ -3,7 +3,7 @@
 Plugin Name: Bootstrap Share Buttons
 Plugin URI: https://github.com/bostondv/bootstrap-share-buttons
 Description: Super lightweight Bootstrap + FontAwesome social sharing buttons (without counters)
-Version: 1.0.2
+Version: 1.0.3
 Author: bostondv
 Author URI: http://pomelodesign.com
 Text Domain: bs-share-buttons
@@ -111,7 +111,7 @@ if (!function_exists('bootstrap_share_buttons')) {
         $icon_classes = array('fa', 'fa-fw', $item['icon']);
         if ($size) $btn_classes[] = 'btn-' . $size;
         if ($type) $btn_classes[] = 'btn-' . $type;
-        if ($type !== 'default') $icon_classes[] = 'fa-inverse';
+        if (in_array($type, array('primary', 'success', 'info', 'warning', 'danger'))) $icon_classes[] = 'fa-inverse';
         if ($size === 'lg') $icon_classes[] = 'fa-lg';
         if ($item['name'] !== 'email') $target = 'target="_blank" ';
         $output .= '<li class="bs-share-item">'."\r\n";

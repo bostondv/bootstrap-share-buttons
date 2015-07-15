@@ -6,7 +6,7 @@ License URI: http://opensource.org/licenses/MIT
 Tags: bootstrap, social, share, buttons, facebook, twitter, pinterest, google, email, print, linkedin
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 
 Super lightweight Bootstrap + FontAwesome social sharing buttons (without counters)
 
@@ -111,6 +111,12 @@ Written by Boston Dell-Vandenberg of [Pomelo Design](http://www.pomelodesign.com
 [Download the repository](https://github.com/bostondv/bootstrap-share-buttons/archive/master.zip) and upload to your project. Include `bootstrap-share-buttons.php` in your project somewhere. 
 
 == Changelog ==
+
+= 1.0.3 =
+
+Release Date: July 15, 2015
+
+* Only invert icon color for primary, success, info, warning, and danger buttons
 
 = 1.0.2 =
 
